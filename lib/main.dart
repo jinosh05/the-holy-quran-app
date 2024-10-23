@@ -42,7 +42,7 @@ Future<void> main() async {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -78,9 +78,9 @@ class _MyAppState extends State<MyApp> {
 class MaterialChild extends StatelessWidget {
   final AppProvider? value;
   const MaterialChild({
-    Key? key,
+    super.key,
     this.value,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -3,9 +3,9 @@ part of '../surah_index_screen.dart';
 class _SurahAppBar extends StatelessWidget {
   final Chapter? data;
   const _SurahAppBar({
-    Key? key,
+    super.key,
     this.data,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

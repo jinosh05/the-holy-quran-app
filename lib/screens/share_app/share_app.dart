@@ -3,18 +3,18 @@ import 'package:al_quran/configs/app_theme.dart';
 import 'package:al_quran/providers/app_provider.dart';
 import 'package:al_quran/utils/assets.dart';
 import 'package:al_quran/widgets/app/app_version.dart';
-import 'package:al_quran/widgets/button/app_back_button.dart';
 import 'package:al_quran/widgets/app/title.dart';
+import 'package:al_quran/widgets/button/app_back_button.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:provider/provider.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 part 'widgets/share_custom_button.dart';
 
 class ShareAppScreen extends StatelessWidget {
-  const ShareAppScreen({Key? key}) : super(key: key);
+  const ShareAppScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class ShareAppScreen extends StatelessWidget {
 }
 
 class ShareInfo extends StatelessWidget {
-  const ShareInfo({Key? key}) : super(key: key);
+  const ShareInfo({super.key});
 
   void share(BuildContext context) {
     final RenderBox box = context.findRenderObject() as RenderBox;
